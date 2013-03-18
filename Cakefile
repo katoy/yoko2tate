@@ -103,12 +103,10 @@ build = (options, callback) ->
   coffee.stdout.on 'data', (data) -> puts data
   coffee.stderr.on 'data', (data) -> error data
   coffee.on 'exit', (status) ->
-    if callback != undefined
-      callback(status)
-    else
-      exec "rm public/javascript/h2v.js"
-      exec "cp #{jsOutput}/h2v.js public/javascript"
-      success "finished status=#{status}"      
+    exec "rm public/javascript/h2v.js", ->
+      exec "cp #{jsOutput}/h2v.js public/javascript",  ->
+        callback?(status)
+        success "finished status=#{status}"      
 
 lint = (options, callback) ->
   try
