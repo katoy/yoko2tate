@@ -1,0 +1,15 @@
+node_modules
+.node_modules
+Thumbs.db
+*~
+*.log
+.DS_Store
+samples/.DS_Store
+samples/testdata/save.xlsx
+samples2/.DS_Store
+samples2/js
+lib/.DS_Store
+docs
+test/testout
+lib-cov
+coverage.html

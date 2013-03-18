@@ -1,0 +1,45 @@
+{
+  "name": "node-rational",
+  "version": "0.0.1",
+  "description": "Rational number in javascript.",
+  "author": "Youichi Kato",
+  "contributors": [
+    {
+      "name": "Youichi Kato",
+      "email": "youichikato@gmail.com"
+    }
+  ],
+  "keywords": [
+    "javascript",
+    "coffeescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katoy/node-rational.git"
+  },
+  "dependencies": {
+    "coffee-script": ">=1.6.1",
+    "optimist": "~0.3.5"
+  },
+  "devDependencies": {
+    "mocha": ">=1.8.1",
+    "chai": ">=1.5.0",
+    "docco": ">=0.4.0",
+    "jscoverage": ">=0.3.5",
+    "tap": ">=0.4.0",
+    "tape": ">=0.2.2",
+    "which": ">=1.0.5",
+    "fs-extra": ">=0.5.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "scripts": {
+    "test": "cake build; mocha",
+    "start": "./node_modules/.bin/coffee examples/sample-00.coffee"
+  }
+}

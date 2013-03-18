@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>縦書｜横書</title>
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./stylesheet/style.css" type="text/css"></link>
+  </head>
+  <body>
+    <div id="div_comment">
+      テキストエリアを編集すると、他方のテキストエリアに変換結果が表示されます。<br/>
+      縦書き内容を tweet もできます。 ⇒ <div class="button" id="tweet_tate" title="縦書きで tweet します。">Tweet...</div>
+    </div>
+
+    <div id="div_yoko">
+      <div>
+	<span>横書き</span>  <span id=yoko_length>0</span> 文字
+      </div>
+      <div>
+	<textarea id="yoko" name="input" rows="10" cols="40"></textarea>
+      </div>
+      <pre>
+お試し用の文書：
+---------------
+祇園精舎の鐘の聲、
+諸行無常の響あり。
+沙羅雙樹の花の色、
+盛者必衰の理をあらはす。
+
+|------------
+|個人→チーム
+|　↓　　↑
+|個人←チーム
+|------------
+
+｜ーーーー｜
+
+
+      </pre>
+    </div>
+
+    <div id="div_tate">
+      <div>
+	<span>縦書き</span>  <span id=tate_length>0</span> 文字
+      </div>
+      <div>
+	<textarea id="tate" name="input" rows="20" cols="20"></textarea>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./javascript/h2v.js"></script>
+    <script src="./javascript/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+@import url(http://css.cdn.tl/normalize.css);
+
+body    {  
+    background-color: #F0F0F0;
+}  
+
+#div_comment {
+    margin-left: 10px;
+}
+
+#div_tate {
+    float:left;
+    margin: 10px;
+}
+
+#div_yoko {
+    float:left;
+    margin: 10px;
+
+}
+
+div.button {
+
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 5px 10px 6px;
+    height: 11px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border: 1px solid rgb(178, 178, 178);
+    border-top-color: rgb(201, 201, 201);
+    border-bottom-color: rgb(154, 154, 154);
+
+    display: inline;
+    color: white;
+    background-image: url(../images/button_bg_green.gif);
+    border-color: rgb(75, 164, 124);
+    border-top-color: rgb(83, 179, 136);
+    border-bottom-color: rgb(69, 150, 113);
+    text-shadow: rgb(170, 170, 170) 0 -1px 0;
+}
