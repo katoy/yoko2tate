@@ -37,6 +37,9 @@ travis: [![Build Status](https://travis-ci.org/katoy/yoko2tate.png?branch=master
 　http://yubais.net/tatetwi/
 　> 縦書きツイート作成ツール
 
-TODO:
- phantomjs, chrome を使って testling でのブラウザ操作のテストを行う事。
- 
+TODO
+======
+phantomjs, chrome を使って testling でのブラウザ操作のテストを行う事。
+
+
+
