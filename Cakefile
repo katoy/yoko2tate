@@ -1,4 +1,4 @@
-1# Refer:
+# Refer:
 # 1. https://github.com/twilson63/cakefile-template/blob/master/Cakefile
 # 2. https://github.com/jashkenas/docco/blob/master/Cakefile
 
@@ -103,10 +103,15 @@ build = (options, callback) ->
   coffee.stdout.on 'data', (data) -> puts data
   coffee.stderr.on 'data', (data) -> error data
   coffee.on 'exit', (status) ->
-    exec "rm public/javascript/h2v.js", ->
-      exec "cp #{jsOutput}/h2v.js public/javascript",  ->
-        callback?(status)
-        success "finished status=#{status}"      
+    callback?(status)
+    exec "rm public/javascript/h2v.js", (err, stdout, stderr)  ->
+      console.log(err) if err
+      exec "cp #{jsOutput}/h2v.js public/javascript", (err, stdout, stderr)  ->
+        console.log(err) if err
+        if callback
+          callback(err)
+        else
+          success "finished status=#{err}"
 
 lint = (options, callback) ->
   try
