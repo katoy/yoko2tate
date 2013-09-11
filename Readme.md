@@ -1,7 +1,9 @@
 
 これは tweeter で縦書きで投稿するためのツールです。
 
-travis: [![Build Status](https://travis-ci.org/katoy/yoko2tate.png?branch=master)](https://travis-ci.org/katoy/yoko2tate)
+[![Build Status](https://travis-ci.org/katoy/yoko2tate.png?branch=master)](https://travis-ci.org/katoy/yoko2tate)
+
+[![Dependency Status](https://gemnasium.com/katoy/yoko2tate.png)](https://gemnasium.com/katoy/yoko2tate)
 
 インストール
 ============
